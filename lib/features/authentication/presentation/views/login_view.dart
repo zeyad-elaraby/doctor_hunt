@@ -5,7 +5,7 @@ import 'package:doctor_hunt/core/utils/app_colors.dart';
 import 'package:doctor_hunt/core/utils/app_images.dart';
 import 'package:doctor_hunt/core/utils/app_strings.dart';
 import 'package:doctor_hunt/core/utils/app_text_styles.dart';
-import 'package:doctor_hunt/features/login/presentation/widgets/social_login_item.dart';
+import 'package:doctor_hunt/features/authentication/presentation/widgets/social_login_item.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -87,8 +87,7 @@ class _LoginViewState extends State<LoginView> {
                     child: CustomElevatedButton(
                       onPressed: () {
                         if (formKey.currentState!.validate()) {
-                          print('Email: ${emailController.text}');
-                          print('Password: ${passwordController.text}');
+                          
                         }
                       },
                       title: AppStrings.login,

@@ -113,10 +113,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
                   )
                 : widget.suffixIcon,
 
-            errorStyle: TextStyle(
-              fontSize: 0,
-              color: AppColors.transparentColor,
-            ),
+            errorStyle: TextStyle(fontSize: 14.sp, color: AppColors.errorColor),
             hintStyle:
                 widget.hintStyle ??
                 AppTextStyles.light16.copyWith(color: AppColors.color677294),
