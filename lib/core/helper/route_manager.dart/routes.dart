@@ -4,4 +4,5 @@ class AppRoutes {
   static const String homeView = "homeView";
   static const String calculateView = "calculateView";
   static const String loginView = "loginView";
+  static const String signUpView = "signUpView";
 }

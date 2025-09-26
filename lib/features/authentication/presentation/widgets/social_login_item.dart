@@ -11,35 +11,42 @@ class SocialLoginItem extends StatelessWidget {
     super.key,
     required this.title,
     required this.imagePath,
+    this.onTap,
   });
   final String title;
   final String imagePath;
+  final void Function()? onTap;
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: EdgeInsets.symmetric(horizontal: 30.w, vertical: 17.h),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(12.r),
-        color: Colors.white,
-        boxShadow: [
-          BoxShadow(
-            color: Colors.grey.withOpacity(0.5),
-            spreadRadius: 0,
-            blurRadius: 15.r,
-            offset: const Offset(0, 0), // changes position of shadow
-          ),
-        ],
-      ),
-     
-      child: Row(
-        children: [
-          SvgPicture.asset(imagePath),
-          SizedBox(width: 12.w),
-          Text(
-            title,
-            style: AppTextStyles.light16.copyWith(color: AppColors.color677294),
-          ),
-        ],
+    return InkWell(
+      onTap: onTap,
+      child: Container(
+        padding: EdgeInsets.symmetric(horizontal: 30.w, vertical: 17.h),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(12.r),
+          color: Colors.white,
+          boxShadow: [
+            BoxShadow(
+              color: Colors.grey.withOpacity(0.2),
+              spreadRadius: 0,
+              blurRadius: 15.r,
+              offset: const Offset(0, 0),
+            ),
+          ],
+        ),
+
+        child: Row(
+          children: [
+            SvgPicture.asset(imagePath),
+            SizedBox(width: 12.w),
+            Text(
+              title,
+              style: AppTextStyles.light16.copyWith(
+                color: AppColors.color677294,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
