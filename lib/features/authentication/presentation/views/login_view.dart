@@ -1,5 +1,6 @@
 import 'package:doctor_hunt/core/components/custom_button.dart';
 import 'package:doctor_hunt/core/components/custom_text_form_field.dart';
+import 'package:doctor_hunt/core/helper/route_manager.dart/routes.dart';
 import 'package:doctor_hunt/core/services/validation.dart';
 import 'package:doctor_hunt/core/utils/app_colors.dart';
 import 'package:doctor_hunt/core/utils/app_images.dart';
@@ -62,23 +63,25 @@ class _LoginViewState extends State<LoginView> {
                       SocialLoginItem(
                         title: AppStrings.google,
                         imagePath: Assets.imagesGoogleIcon,
+                        onTap: () {},
                       ),
                       SocialLoginItem(
                         title: AppStrings.facebook,
                         imagePath: Assets.imagesFacebookIcon,
+                        onTap: () {},
                       ),
                     ],
                   ),
                   SizedBox(height: 37.h),
                   CustomTextField(
                     controller: emailController,
-                    hintText: AppStrings.enterYourEmail,
+                    hintText: AppStrings.email,
                     validator: validateEmail,
                   ),
                   SizedBox(height: 18.h),
                   CustomTextField(
                     controller: passwordController,
-                    hintText: AppStrings.enterYourPassword,
+                    hintText: AppStrings.password,
                     validator: validatePassword,
                   ),
                   SizedBox(height: 32.h),
@@ -86,9 +89,7 @@ class _LoginViewState extends State<LoginView> {
                     padding: EdgeInsets.symmetric(horizontal: 20.w),
                     child: CustomElevatedButton(
                       onPressed: () {
-                        if (formKey.currentState!.validate()) {
-                          
-                        }
+                        if (formKey.currentState!.validate()) {}
                       },
                       title: AppStrings.login,
                     ),
@@ -105,7 +106,9 @@ class _LoginViewState extends State<LoginView> {
                   ),
                   SizedBox(height: 123.h),
                   InkWell(
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.pushNamed(context, AppRoutes.signUpView);
+                    },
                     child: Text(
                       AppStrings.dontHaveAnAccount,
                       style: AppTextStyles.regular14.copyWith(

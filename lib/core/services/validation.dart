@@ -13,6 +13,12 @@ String? validateEmail(String? value) {
 
   return null;
 }
+String? validateName(String? value) {
+  if (value == null || value.isEmpty) {
+    return 'Name is required';
+  }
+  return null;
+}
 
 String? validatePassword(String? value) {
   if (value == null || value.isEmpty) {
