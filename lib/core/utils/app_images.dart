@@ -46,6 +46,10 @@ class Assets {
   /// assets/images/home_bottom_nav_unselected.svg
   static const String imagesHomeBottomNavUnselected = "assets/images/home_bottom_nav_unselected.svg";
 
+  /// Assets for imagesLiveDeoctor2
+  /// assets/images/live_deoctor2.png
+  static const String imagesLiveDeoctor2 = "assets/images/live_deoctor2.png";
+
   /// Assets for imagesLiveDoctor
   /// assets/images/live_doctor.png
   static const String imagesLiveDoctor = "assets/images/live_doctor.png";

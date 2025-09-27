@@ -11,6 +11,11 @@ abstract class AppTextStyles {
     fontSize: 12,
     fontWeight: FontWeight.w300,
   );
+  // FontSize 14
+  static const TextStyle light14 = TextStyle(
+    fontSize: 14,
+    fontWeight: FontWeight.w300,
+  );
   // FontSize 16
   static const TextStyle light16 = TextStyle(
     fontSize: 16,
