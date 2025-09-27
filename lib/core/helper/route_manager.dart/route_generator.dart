@@ -2,6 +2,7 @@ import 'package:doctor_hunt/core/helper/route_manager.dart/routes.dart';
 import 'package:doctor_hunt/features/authentication/presentation/views/login_view.dart'
     show LoginView;
 import 'package:doctor_hunt/features/authentication/presentation/views/sign_up_view.dart';
+import 'package:doctor_hunt/features/find_doctors/presentation/views/find_doctors_view.dart';
 import 'package:doctor_hunt/features/home/presentation/views/bottom_nav_view.dart';
 import 'package:doctor_hunt/features/home/presentation/views/home_view.dart';
 import 'package:doctor_hunt/features/live/presentation/views/live_view.dart';
@@ -28,6 +29,10 @@ Route<dynamic> onGenerateRoutes(RouteSettings settings) {
     case AppRoutes.bottomNavView:
       return MaterialPageRoute(
         builder: (context) => BottomNavView(currentIndex: 0),
+      );
+    case AppRoutes.findDoctorsView:
+      return MaterialPageRoute(
+        builder: (context) => FindDoctorsView(),
       );
 
     default:

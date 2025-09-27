@@ -7,6 +7,11 @@ abstract class AppTextStyles {
     fontWeight: FontWeight.w300,
   );
   // FontSize 12
+  static const TextStyle light11 = TextStyle(
+    fontSize: 11,
+    fontWeight: FontWeight.w300,
+  );
+  // FontSize 12
   static const TextStyle light12 = TextStyle(
     fontSize: 12,
     fontWeight: FontWeight.w300,
@@ -32,6 +37,10 @@ abstract class AppTextStyles {
     fontSize: 12,
     fontWeight: FontWeight.w400,
   );
+  static const TextStyle regular13 = TextStyle(
+    fontSize: 13,
+    fontWeight: FontWeight.w400,
+  );
 
   // FontSize 14
   static const TextStyle regular14 = TextStyle(
@@ -42,6 +51,10 @@ abstract class AppTextStyles {
   // FontSize 16
   static const TextStyle regular16 = TextStyle(
     fontSize: 16,
+    fontWeight: FontWeight.w400,
+  );
+  static const TextStyle regular18 = TextStyle(
+    fontSize: 18,
     fontWeight: FontWeight.w400,
   );
 
@@ -58,6 +71,10 @@ abstract class AppTextStyles {
   // FontSize 18
   static const TextStyle medium12 = TextStyle(
     fontSize: 12,
+    fontWeight: FontWeight.w500,
+  );
+  static const TextStyle medium13 = TextStyle(
+    fontSize: 13,
     fontWeight: FontWeight.w500,
   );
   static const TextStyle medium18 = TextStyle(
