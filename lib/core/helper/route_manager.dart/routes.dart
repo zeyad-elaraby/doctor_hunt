@@ -7,4 +7,5 @@ class AppRoutes {
   static const String signUpView = "signUpView";
   static const String bottomNavView = "bottomNavView";
   static const String liveView = "liveView";
+  static const String findDoctorsView = "findDoctorsView";
 }

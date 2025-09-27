@@ -1,6 +1,7 @@
 import 'package:doctor_hunt/core/components/custom_button.dart';
 import 'package:doctor_hunt/core/components/custom_text_form_field.dart';
 import 'package:doctor_hunt/core/components/star_rating.dart';
+import 'package:doctor_hunt/core/helper/route_manager.dart/routes.dart';
 import 'package:doctor_hunt/core/utils/app_colors.dart';
 import 'package:doctor_hunt/core/utils/app_images.dart';
 import 'package:doctor_hunt/core/utils/app_strings.dart';
@@ -139,7 +140,10 @@ class HomeView extends StatelessWidget {
                           shrinkWrap: true,
                           scrollDirection: Axis.horizontal,
                           itemBuilder: (context, index) =>
-                              CategoryCard(categoryModel: categories[index]),
+                              CategoryCard(categoryModel: categories[index]
+                              ,
+                              onTap: () => Navigator.pushNamed(context, AppRoutes.findDoctorsView),
+                              ),
                           separatorBuilder: (context, index) =>
                               SizedBox(width: 12.w),
                           itemCount: categories.length,

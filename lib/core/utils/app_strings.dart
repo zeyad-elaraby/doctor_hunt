@@ -31,4 +31,6 @@ class AppStrings {
   static const String seeAll = "See all";
   static const String featureDoctor = "Feature Doctor";
   static const String addComment = "Add a Comment......";
+  static const String nextAvailable = "Next Available";
+  static const String bookNow = "Book Now";
 }
