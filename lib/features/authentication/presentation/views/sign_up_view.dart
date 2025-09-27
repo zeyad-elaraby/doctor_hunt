@@ -140,7 +140,7 @@ class _SignUpViewState extends State<SignUpView> {
                   child: Text(
                     AppStrings.haveAnAccountLogin,
                     style: AppTextStyles.regular14.copyWith(
-                      color: AppColors.color0EBE7F,
+                      color: AppColors.primaryColor,
                     ),
                   ),
                 ),

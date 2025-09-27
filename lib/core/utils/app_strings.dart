@@ -22,6 +22,12 @@ class AppStrings {
       "You can search  ourse, apply course and find scholarship for abroad studies";
   static const String agreeTerms =
       "I agree with the Terms of Service & Privacy Policy";
-      static const String signUp = "Sign Up";
-      static const String haveAnAccountLogin = "Have an account? Log in";
+  static const String signUp = "Sign Up";
+  static const String haveAnAccountLogin = "Have an account? Log in";
+  static const String hiMessage = "Hi Handwerker!";
+  static const String findYourDoctor = "Find Your Doctor";
+  static const String liveDoctor = "Live Doctors";
+  static const String live = "LIVE";
+  static const String seeAll = "See all";
+  static const String featureDoctor = "Feature Doctor";
 }
