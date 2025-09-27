@@ -89,7 +89,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
           maxLines: widget.maxLines ?? 1,
           keyboardType: widget.keyBoardType ?? TextInputType.text,
           controller: widget.controller,
-          cursorColor: AppColors.color0EBE7F,
+          cursorColor: AppColors.primaryColor,
           decoration: InputDecoration(
             contentPadding: EdgeInsetsDirectional.symmetric(
               horizontal: 25.w,

@@ -4,8 +4,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomCheckBox extends StatelessWidget {
   const CustomCheckBox({super.key, required this.isChecked, this.onChanged});
- final bool isChecked;
- final void Function(bool?)? onChanged;
+  final bool isChecked;
+  final void Function(bool?)? onChanged;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -19,14 +19,14 @@ class CustomCheckBox extends StatelessWidget {
           side: BorderSide(color: AppColors.color677294.withOpacity(0.5)),
         ),
         value: isChecked,
-        onChanged:onChanged,
+        onChanged: onChanged,
         activeColor: const Color(0xFF0EBE7F),
         checkColor: Colors.white,
         fillColor: MaterialStateProperty.resolveWith<Color>((
           Set<MaterialState> states,
         ) {
           if (states.contains(MaterialState.selected)) {
-            return AppColors.color0EBE7F;
+            return AppColors.primaryColor;
           }
           return AppColors.color677294.withOpacity(0.5);
         }),

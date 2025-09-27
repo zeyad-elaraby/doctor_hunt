@@ -89,7 +89,13 @@ class _LoginViewState extends State<LoginView> {
                     padding: EdgeInsets.symmetric(horizontal: 20.w),
                     child: CustomElevatedButton(
                       onPressed: () {
-                        if (formKey.currentState!.validate()) {}
+                        if (formKey.currentState!.validate()) {
+                          Navigator.pushNamedAndRemoveUntil(
+                            context,
+                            AppRoutes.bottomNavView,
+                            (route) => false,
+                          );
+                        }
                       },
                       title: AppStrings.login,
                     ),
@@ -100,7 +106,7 @@ class _LoginViewState extends State<LoginView> {
                     child: Text(
                       AppStrings.forgotPassword,
                       style: AppTextStyles.regular14.copyWith(
-                        color: AppColors.color0EBE7F,
+                        color: AppColors.primaryColor,
                       ),
                     ),
                   ),
@@ -112,7 +118,7 @@ class _LoginViewState extends State<LoginView> {
                     child: Text(
                       AppStrings.dontHaveAnAccount,
                       style: AppTextStyles.regular14.copyWith(
-                        color: AppColors.color0EBE7F,
+                        color: AppColors.primaryColor,
                       ),
                     ),
                   ),
